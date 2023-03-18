@@ -1,0 +1,16 @@
+<film>
+    <actors>
+        <actor>
+            <id>1</id>
+            <name>Voix-off</name>
+        </actor>
+    </actors>
+    <scenes>
+        <scene>
+
+        </scene>
+        <action>
+
+        </action>
+    </scenes>
+</film>
