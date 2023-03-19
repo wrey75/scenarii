@@ -18,6 +18,7 @@ public final class DtoMappers {
     public static FilmDto filmToDto(DBFilm film) {
         FilmDto dto = new FilmDto();
         tryToCopy(dto, film);
+        dto.setUserOwnner(film.getOwner().getLogin());
         return dto;
     }
 }

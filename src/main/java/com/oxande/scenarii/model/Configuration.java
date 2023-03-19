@@ -9,7 +9,7 @@ import lombok.ToString;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Entity(name = "scenarii_conf")
+@Entity(name = "sc_config")
 @Setter @Getter
 @NoArgsConstructor
 @ToString

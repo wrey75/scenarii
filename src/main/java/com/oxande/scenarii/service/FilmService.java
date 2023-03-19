@@ -2,8 +2,8 @@ package com.oxande.scenarii.service;
 
 import com.oxande.scenarii.model.Actor;
 import com.oxande.scenarii.model.DBFilm;
+import com.oxande.scenarii.model.DBUser;
 import com.oxande.scenarii.model.Paragraph;
-import com.oxande.scenarii.model.User;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
@@ -17,7 +17,7 @@ public class FilmService {
     EntityManager em;
 
     @Transactional
-    public DBFilm createFilm(User user, String title) {
+    public DBFilm createFilm(DBUser user, String title) {
         DBFilm film = new DBFilm();
         film.setTitle(title);
         film.setOwner(user);
@@ -26,7 +26,7 @@ public class FilmService {
     }
 
     @Transactional
-    public Actor createActor(DBFilm f, User u, String name){
+    public Actor createActor(DBFilm f, DBUser u, String name){
         Actor actor = new Actor();
         actor.setFilm(f);
         actor.setName(name);

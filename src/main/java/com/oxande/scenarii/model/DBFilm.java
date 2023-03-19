@@ -25,7 +25,7 @@ public class DBFilm extends DBEntity {
 
     @ManyToOne
     @JoinColumn(name = "owner_id", nullable = false)
-    private User owner;
+    private DBUser owner;
 
     public boolean visibleBy(Principal principal) {
         if (this.visibilty.equalsIgnoreCase(PUBLIC)) {

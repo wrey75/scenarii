@@ -10,7 +10,7 @@ import javax.persistence.*;
 import java.lang.reflect.InvocationTargetException;
 
 @Entity
-@Table(name="history")
+@Table(name="sc_history")
 @NoArgsConstructor
 @Getter
 @Setter

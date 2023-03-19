@@ -16,7 +16,7 @@ import java.util.stream.Stream;
  * This entity stores the
  */
 @Entity
-@Table(name = "screenplay")
+@Table(name = "sc_screenplay")
 @Setter
 @Getter
 public class Paragraph extends AbstractParagraph {

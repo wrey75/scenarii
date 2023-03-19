@@ -43,3 +43,8 @@ replay_pid*
 
 # Mac OS files
 .DS_Store
+
+# IDEs
+.idea/
+h2_database/
+target/

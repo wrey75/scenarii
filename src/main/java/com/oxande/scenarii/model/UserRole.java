@@ -24,7 +24,7 @@ public class UserRole {
 
     @ManyToOne
     @JoinColumn(name = "user_id")
-    private User user;
+    private DBUser user;
     
     private String roles = "owner";
 

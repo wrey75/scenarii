@@ -8,4 +8,6 @@ import lombok.EqualsAndHashCode;
 public class FilmDto {
     public Long id;
     public String title;
+    public String visibility;
+    public String userOwnner;
 }

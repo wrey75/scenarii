@@ -12,6 +12,6 @@ import io.quarkus.hibernate.orm.panache.PanacheRepository;
 @ApplicationScoped
 public class ActorRepository implements PanacheRepository<Actor> {
     public List<Actor> findByFilm(DBFilm film) {
-        return DBFilm.find("film", film).list();
+        return Actor.find("film", film).list();
     }
 }

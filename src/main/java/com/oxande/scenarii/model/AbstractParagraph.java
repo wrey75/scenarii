@@ -39,7 +39,7 @@ abstract class AbstractParagraph extends DBEntity {
      */
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
-    private User user;
+    private DBUser user;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "actor_id", nullable = true)
